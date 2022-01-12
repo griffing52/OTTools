@@ -37,3 +37,9 @@ html, body {
     height: 100%;
     text-align: center;
 }
+
+/* @media print {
+    .header{
+      display:none;
+    }
+  } */
