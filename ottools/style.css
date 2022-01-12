@@ -9,11 +9,15 @@ html, body {
     width: 100%;
     height: 10%;
     background-color: #061936;
+    position: fixed;
+    min-height: 3em;
 }
 
 #input {
     width: 80%;
     height: 100%;
+
+    margin-top: 5%;
 
     color: #b1b1b1;
     font-size: 20px;
@@ -38,8 +42,12 @@ html, body {
     text-align: center;
 }
 
-/* @media print {
-    .header{
-      display:none;
-    }
-  } */
+.striped-border { 
+    border: 1px dashed #000;
+}
+
+#printContent {
+    width: 8.5in;
+    height: 11.5in;
+    padding: 0.8in 0.7in 0in 0.7in;
+}
