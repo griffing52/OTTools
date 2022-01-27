@@ -49,11 +49,14 @@ const drawBox = ctx => x => y => w => h => {
     ctx.lineTo(x, y)
 }
 
-const drawBoundingBox = ctx => letter => metric => x => y => {
-    let h = metric.actualBoundingBoxAscent*-1-metric.actualBoundingBoxDescent
-    if (ascenders.includes(letter)) h = -1*metric.actualBoundingBoxAscent
-    else if (descenders.includes(letter)) h = metric.actualBoundingBoxDescent
-    drawBox(ctx)(x)(y)(metric.actualBoundingBoxRight)(h)
+const drawBoundingBox = ctx => letter => metric => x => y => s => {
+    let descenderO = 1.3
+    let ascenderO = 1.3
+
+    let h = s*metric.actualBoundingBoxAscent*-1-s*metric.actualBoundingBoxDescent
+    if (ascenders.includes(letter)) h = -ascenderO*s*metric.actualBoundingBoxAscent
+    else if (descenders.includes(letter)) h = s*metric.actualBoundingBoxDescent
+    drawBox(ctx)(x)(y)(s*metric.actualBoundingBoxRight)(h)
 }
 
 const drawText = ctx => text => step => {
@@ -61,13 +64,18 @@ const drawText = ctx => text => step => {
     let y = step*2
     let x = 0;
 
-    ctx.fontSize = Math.floor(step*1.8)+"px"
+    ctx.font = `${Math.floor(step*1.8)}px Arial, Helvetica`
+    // ctx.font = Math.floor(step*1.8)+"px"
     ctx.beginPath()
+    ctx.fillText(text, x, y); 
     words.forEach(word => {
         let letters = word.split('')
         letters.forEach(letter => {
             let metric = ctx.measureText(letter)
-            drawBoundingBox(ctx)(letter)(metric)(x)(y)
+            
+            drawBoundingBox(ctx)(letter)(metric)(x)(y+3*step)(1)
+            // drawBoundingBox(ctx)(letter)(metric)(x)(y+2*step)(Math.floor(step*1.8)/9)
+            // x+=metric.actualBoundingBoxRight*Math.floor(step*1.8)/9
             x+=metric.actualBoundingBoxRight
         })
     })
