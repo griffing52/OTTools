@@ -58,5 +58,9 @@
             elm.style.strokeWidth = '1.0';
             elm.selected = false;
         }
+
+        document.querySelector('svg').addEventListener('click', e => {
+            console.log("X: " + e.x + "Y: " + e.y)
+        })
     </script>
 </svg>
