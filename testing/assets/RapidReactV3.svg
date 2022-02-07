@@ -1,0 +1,133 @@
+<svg version="1.1" viewBox="0.0 0.0 344.498687664042 293.2257217847769" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+    <clipPath id="p.0">
+        <path d="m0 0l344.4987 0l0 293.2257l-344.4987 0l0 -293.2257z" clip-rule="nonzero"/>
+    </clipPath>
+    <g clip-path="url(#p.0)">
+        <path fill="#000000" fill-opacity="0.0" d="m0 0l344.4987 0l0 293.2257l-344.4987 0z" fill-rule="evenodd"/>
+        <path fill="#434343" d="m0 70.1585l0 0c0 -13.313381 10.792626 -24.106007 24.106007 -24.106007l296.5124 0c6.3933105 0 12.52475 2.539734 17.045502 7.060486c4.520752 4.520752 7.060486 10.65221 7.060486 17.04552l0 199.41003c0 13.313385 -10.792603 24.105988 -24.105988 24.105988l-296.5124 0c-13.31338 0 -24.106007 -10.792603 -24.106007 -24.105988z" fill-rule="evenodd"/>
+        <path fill="#666666" d="m412.0682 231.50644l-108.25195 108.25198l-43.62204 -43.62207l108.25195 -108.25195z" fill-rule="evenodd"/>
+        <path fill="#ff9900" onclick="cycle(3)" d="m247.58533 247.94756l0 0c-7.5232544 7.5232544 -19.72084 7.5232544 -27.244095 0l0 0c-3.612793 -3.6127777 -5.642441 -8.512787 -5.642441 -13.62204c0 -5.109253 2.0296478 -10.009262 5.642441 -13.622055l0 0c7.5232544 -7.523239 19.72084 -7.523239 27.244095 0l0 0c7.523239 7.5232544 7.523239 19.720856 0 27.244095z" fill-rule="evenodd"/>
+        <path stroke="#d9d9d9" onclick="cycle(3)" id="outline3" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m247.58533 247.94756l0 0c-7.5232544 7.5232544 -19.72084 7.5232544 -27.244095 0l0 0c-3.612793 -3.6127777 -5.642441 -8.512787 -5.642441 -13.62204c0 -5.109253 2.0296478 -10.009262 5.642441 -13.622055l0 0c7.5232544 -7.523239 19.72084 -7.523239 27.244095 0l0 0c7.523239 7.5232544 7.523239 19.720856 0 27.244095z" fill-rule="evenodd"/>
+        <path fill="#ff9900" onclick="cycle(1)" d="m323.27298 230.75859l0 0c-7.5232544 7.523239 -19.720825 7.523239 -27.24408 0l0 0c-3.612793 -3.612793 -5.642456 -8.512787 -5.642456 -13.622055c0 -5.109253 2.029663 -10.009247 5.642456 -13.62204l0 0c7.5232544 -7.5232544 19.720825 -7.5232544 27.24408 0l0 0c7.5232544 7.523239 7.5232544 19.72084 0 27.244095z" fill-rule="evenodd"/>
+        <path stroke="#d9d9d9" onclick="cycle(1)" id="outline1" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m323.27298 230.75859l0 0c-7.5232544 7.523239 -19.720825 7.523239 -27.24408 0l0 0c-3.612793 -3.612793 -5.642456 -8.512787 -5.642456 -13.622055c0 -5.109253 2.029663 -10.009247 5.642456 -13.62204l0 0c7.5232544 -7.5232544 19.720825 -7.5232544 27.24408 0l0 0c7.5232544 7.523239 7.5232544 19.72084 0 27.244095z" fill-rule="evenodd"/>
+        <path fill="#ff9900" onclick="cycle(2)" d="m332.80054 285.24677l0 0c-7.523224 7.5232544 -19.720825 7.5232544 -27.24408 0l0 0c-3.612793 -3.612793 -5.642456 -8.512787 -5.642456 -13.62204c0 -5.109253 2.029663 -10.009247 5.642456 -13.62204l0 0c7.5232544 -7.5232544 19.720856 -7.5232544 27.24408 0l0 0c7.5232544 7.5232544 7.5232544 19.720825 0 27.24408z" fill-rule="evenodd"/>
+        <path stroke="#d9d9d9" onclick="cycle(2)" id="outline2" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m332.80054 285.24677l0 0c-7.523224 7.5232544 -19.720825 7.5232544 -27.24408 0l0 0c-3.612793 -3.612793 -5.642456 -8.512787 -5.642456 -13.62204c0 -5.109253 2.029663 -10.009247 5.642456 -13.62204l0 0c7.5232544 -7.5232544 19.720856 -7.5232544 27.24408 0l0 0c7.5232544 7.5232544 7.5232544 19.720825 0 27.24408z" fill-rule="evenodd"/>
+        <path fill="#ff9900" onclick="cycle(0)" d="m320.27036 133.24678l0 0c-7.5232544 7.523239 -19.720825 7.523239 -27.24408 0l0 0c-3.612793 -3.612793 -5.642456 -8.5127945 -5.642456 -13.622055c0 -5.109253 2.029663 -10.009254 5.642456 -13.622047l0 0c7.5232544 -7.523247 19.720825 -7.523247 27.24408 0l0 0c7.5232544 7.5232544 7.5232544 19.720848 0 27.244102z" fill-rule="evenodd"/>
+        <path stroke="#d9d9d9" onclick="cycle(0)" id="outline0" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m320.27036 133.24678l0 0c-7.5232544 7.523239 -19.720825 7.523239 -27.24408 0l0 0c-3.612793 -3.612793 -5.642456 -8.5127945 -5.642456 -13.622055c0 -5.109253 2.029663 -10.009254 5.642456 -13.622047l0 0c7.5232544 -7.523247 19.720825 -7.523247 27.24408 0l0 0c7.5232544 7.5232544 7.5232544 19.720848 0 27.244102z" fill-rule="evenodd"/>
+        <path fill="#000000" fill-opacity="0.0" d="m195.74629 3.2019982l57.950714 57.950706l0 81.95685l-57.950714 57.950714l-81.95685 0l-57.950706 -57.950714l0 -81.95685l57.950706 -57.950706z" fill-rule="evenodd"/>
+        <path stroke="#cccccc" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="butt" d="m195.74629 3.2019982l57.950714 57.950706l0 81.95685l-57.950714 57.950714l-81.95685 0l-57.950706 -57.950714l0 -81.95685l57.950706 -57.950706z" fill-rule="evenodd"/>
+        <path fill="#ff9900" d="m253.28596 61.966064l-197.84251 80.33595l59.351704 58.75328l80.93701 0l57.553802 -58.75328z" fill-rule="evenodd"/>
+        <path fill="#4a86e8" d="m253.68492 61.966064l-197.24147 80.93439l-0.60105133 -80.33596l57.553806 -58.15223l81.53544 -0.59842515z" fill-rule="evenodd"/>
+        <path fill="#000000" fill-opacity="0.0" d="m253.697 61.152706l-197.85828 81.95276" fill-rule="evenodd"/>
+        <path stroke="#d9d9d9" stroke-width="4.0" stroke-linejoin="round" stroke-linecap="butt" d="m253.697 61.152706l-197.85828 81.95276" fill-rule="evenodd"/>
+        <path fill="#000000" fill-opacity="0.0" d="m113.789444 3.2019982l81.95276 197.85828" fill-rule="evenodd"/>
+        <path stroke="#d9d9d9" stroke-width="4.0" stroke-linejoin="round" stroke-linecap="butt" d="m113.789444 3.2019982l81.95276 197.85828" fill-rule="evenodd"/>
+        <path fill="#d9d9d9" d="m187.66838 88.47591l-19.244095 46.582672l-46.582672 -19.244095l19.244095 -46.582672z" fill-rule="evenodd"/>
+        <path fill="#ff9900" onclick="cycle(4)" d="m73.34648 244.97119l0 0c-7.5232544 7.523239 -19.720848 7.523239 -27.244095 0l0 0c-3.612793 -3.612793 -5.642437 -8.512802 -5.642437 -13.622055c0 -5.109253 2.029644 -10.009262 5.642437 -13.62204l0 0c7.523247 -7.5232544 19.72084 -7.5232544 27.244095 0l0 0c7.523247 7.523239 7.523247 19.72084 0 27.244095z" fill-rule="evenodd"/>
+        <path stroke="#d9d9d9" onclick="cycle(4)" id="outline4" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m73.34648 244.97119l0 0c-7.5232544 7.523239 -19.720848 7.523239 -27.244095 0l0 0c-3.612793 -3.612793 -5.642437 -8.512802 -5.642437 -13.622055c0 -5.109253 2.029644 -10.009262 5.642437 -13.62204l0 0c7.523247 -7.5232544 19.72084 -7.5232544 27.244095 0l0 0c7.523247 7.523239 7.523247 19.72084 0 27.244095z" fill-rule="evenodd"/>
+        <text style="font-size: 24px;" id="value1" fill="#ffffff" x="1000" y="1000">1</text>
+        <text style="font-size: 24px;" id="value2" fill="#ffffff" x="1000" y="1000">2</text>
+        <text style="font-size: 24px;" id="value3" fill="#ffffff" x="1000" y="1000">3</text>
+        <text style="font-size: 24px;" id="value4" fill="#ffffff" x="1000" y="1000">4</text>
+        <text style="font-size: 24px;" id="value5" fill="#ffffff" x="1000" y="1000">5</text>
+    </g>
+    <script>
+        let dict = [[301, 128], [304, 226], [314, 281], [228, 243], [54, 240]]
+        <!-- let balls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] -->
+        let balls = [];
+
+        const cycle = id => {
+            const elm = document.getElementById('outline'+id);
+            (elm.selected) ? reset(id) : update(id);
+        }
+        
+        const update = id => {
+            <!-- balls[num++] = id; -->
+            if (balls.length >= 5) return;
+            
+            balls.push(id);
+
+            let t = document.getElementById('value' + balls.length)
+            t.setAttribute("x", dict[id][0])
+            t.setAttribute("y", dict[id][1])
+            
+            const elm = document.getElementById('outline'+id);
+            elm.style.stroke = '#ffcd45';
+            elm.style.strokeWidth = '4.0';
+            elm.selected = true;
+        }
+        
+        const reset = (id, c) => {            
+            let t = document.getElementById('value'+(balls.indexOf(id)+1))
+            t.setAttribute("x", 1000)
+            t.setAttribute("y", 1000)
+            
+            let temp = []
+            // replace with "and" condition
+            if (balls.length > balls.indexOf(id)+1) {
+                if (!c) {
+                    // reset greater balls and udpate in order
+                    for (let i = balls.indexOf(id)+1; balls.length > i; i++) {
+                        temp.push(balls[i])
+                    }
+                    temp.forEach(v => {
+                        reset(v, true)
+                    })
+                    balls = balls.filter(x => x != -1);
+                }
+            }
+            
+            const elm = document.getElementById('outline'+id);
+            elm.style.stroke = '#d9d9d9';
+            elm.style.strokeWidth = '1.0';
+            elm.selected = false;
+            
+            if (c) balls[balls.indexOf(id)] = -1;
+            else balls.splice(balls.indexOf(id), 1)
+            
+            temp.forEach(v => {
+                update(v)
+            })
+        }
+     </script>
+     <script>
+        document.querySelector('svg').addEventListener('click', e => {
+            let x = e.x-486+56
+            let y = e.y
+
+            let t = document.querySelector('text')
+            <!-- t.setAttribute("y", y)
+            t.setAttribute("x", x) -->
+            console.log("[" + x + ", " + y + "]")
+        })
+
+        document.querySelector('svg').addEventListener('keydown', e => {
+            let x = parseInt(document.querySelector('text').getAttribute('x'))
+            let y = parseInt(document.querySelector('text').getAttribute('y'))
+
+            if (e.keyCode == 37) x--
+            if (e.keyCode == 39) x++
+            if (e.keyCode == 38) y--
+            if (e.keyCode == 40) y++
+
+            let t = document.querySelector('text')
+            <!-- t.setAttribute("y", y)
+            t.setAttribute("x", x) -->
+            console.log("[" + x + ", " + y + "]")
+        })
+     </script>
+     <style>
+        text {
+            pointer-events: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select:none;
+            -khtml-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            -o-user-select:none;
+            user-select:none;
+            <!-- font-weight: bold; -->
+            text-align: center;
+        }
+     </style>
+</svg>
