@@ -50,34 +50,60 @@ const drawBox = ctx => x => y => w => h => {
 }
 
 const drawBoundingBox = ctx => letter => metric => x => y => s => {
+    // ctx.setLineDash([6])
+    ctx.lineWidth = 4;
+
     let descenderO = 1.3
     let ascenderO = 1.3
 
     let h = s*metric.actualBoundingBoxAscent*-1-s*metric.actualBoundingBoxDescent
-    if (ascenders.includes(letter)) h = -ascenderO*s*metric.actualBoundingBoxAscent
-    else if (descenders.includes(letter)) h = s*metric.actualBoundingBoxDescent
+    if (ascenders.includes(letter) || letter == letter.toUpperCase()) h = -ascenderO*s*metric.actualBoundingBoxAscent
+    // else if (descenders.includes(letter)) h = -descenderO*s*(metric.actualBoundingBoxDescent+metric.actualBoundingBoxAscent)
+    else if (descenders.includes(letter)) {
+        h=-metric.actualBoundingBoxAscent-metric.actualBoundingBoxDescent*descenderO
+        y+=metric.actualBoundingBoxDescent*descenderO
+        // y+=h-(h*=descenderO)        
+    }
     drawBox(ctx)(x)(y)(s*metric.actualBoundingBoxRight)(h)
+    // drawBox(ctx)(x-s*metric.actualBoundingBoxLeft)(y)(s*metric.actualBoundingBoxRight)(h)
+    // drawBox(ctx)(x)(y)(s*metrics.width)(h)
 }
 
-const drawText = ctx => text => step => {
-    let words = text.split(' ')
+const drawText = ctx => text => step => xBound => {
     let y = step*2
     let x = 0;
+
 
     ctx.font = `${Math.floor(step*1.8)}px Arial, Helvetica`
     // ctx.font = Math.floor(step*1.8)+"px"
     ctx.beginPath()
-    ctx.fillText(text, x, y); 
-    words.forEach(word => {
-        let letters = word.split('')
-        letters.forEach(letter => {
-            let metric = ctx.measureText(letter)
-            
-            drawBoundingBox(ctx)(letter)(metric)(x)(y+3*step)(1)
-            // drawBoundingBox(ctx)(letter)(metric)(x)(y+2*step)(Math.floor(step*1.8)/9)
-            // x+=metric.actualBoundingBoxRight*Math.floor(step*1.8)/9
-            x+=metric.actualBoundingBoxRight
+
+    let s = 1;
+    space = ctx.measureText(' ').width
+    text.split('\n').forEach(line => {
+        line.split(' ').forEach(word => {
+            if (ctx.measureText(word).width + x > xBound) {
+                x = 0;
+                y+=6*step;
+            }
+            word.split('').forEach(letter => {
+                let metric = ctx.measureText(letter)
+                
+                // if (x + metric.actualBoundingBoxRight*s > xBound) {
+                //     x = 0;
+                //     y+=6*step;
+                // }
+                
+                ctx.fillText(letter, x, y);
+                drawBoundingBox(ctx)(letter)(metric)(x)(y+3*step)(s)
+                // drawBoundingBox(ctx)(letter)(metric)(x)(y+2*step)(Math.floor(step*1.8)/9)
+                // x+=metric.actualBoundingBoxRight*Math.floor(step*1.8)/9
+                x+=metric.actualBoundingBoxRight
+            })
+            x+=space;
         })
+        x = 0
+        y+=6*step
     })
     ctx.stroke()
 }
@@ -99,7 +125,7 @@ const loadContent = () => {
   	ctx.fill()
     
     let s = drawPDF(ctx)(9)(18/951)
-    drawText(ctx)(text)(s)
+    drawText(ctx)(text)(s)(canvas.width)
 
 
     // var dataUrl = document.getElementById('canvas').toDataURL();
