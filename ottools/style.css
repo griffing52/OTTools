@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     width: 100%;
     height: 100%;
-    background-color: #101011;
+    background-color: #b1b1bb;
 }
 
 .header {
@@ -12,19 +12,23 @@ html, body {
     position: fixed;
     min-height: 3em;
     text-align: center;
+    z-index: 1;
 }
 
 #input {
     width: 80%;
     height: 100%;
 
-    margin-top: 5%;
+    position: absolute;
+    left: 10%;
+    top: 12%;
+    z-index: 0;
 
-    color: #b1b1b1;
+    color: #030303;
     font-size: 70px;
     padding: 20px;
 
-    background-color:#1f2124;
+    background-color:#ffffff;
     
     border: none;
     overflow: auto;
@@ -54,16 +58,50 @@ html, body {
 }
 
 .header-btn {
-    width: 10%;
+    width: 33%;
     height: 100%;
     background-color: #041227;
     color: white;
     font-size: 24pt;
     border: none;
     transition: background-color 1s;
+    float: right;
 }
 
 .header-btn:hover {
     background-color: #062047;
     transition: background-color 1s;
 }
+
+.header-text {
+    float:left;
+    color: lightgrey;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+header > .header-text {
+    font-size: 60px;
+    font-size: 3vh;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.header-btn-wrapper > .header-text {
+    /* display: inline; */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 13%;
+}
+
+.header-btn-wrapper {
+    height:100%;
+    width:30%;
+    float: right;
+}
+

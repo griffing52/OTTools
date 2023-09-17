@@ -9,10 +9,16 @@
     <body>
         <header class="header">
             <!-- <a href="../testing/index.html">Tests</a> -->
-            <button onclick="print()" class="header-btn">Print</button>
+            <div class="header-text">Lined Paper Creator</div>
+            
+            <div class="header-btn-wrapper">
+                <span class="header-text">Press Ctrl+P or click "Print" to print →</span>
+                <button onclick="print()" class="header-btn">Print</button>
+            </div>
+            
         </header>
         <div id="main">    
-            <textarea id="input">What does the fox say? What does the fox say?</textarea>
+            <textarea id="input" placeholder="Type text here"></textarea>
         </div>
         <script type="text/javascript" src="main.js"></script>
     </body>
