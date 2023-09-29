@@ -76,7 +76,8 @@ const drawText = ctx => text => step => xBound => {
     let x = 0;
 
 
-    ctx.font = `${Math.floor(step*1.8)}px Arial, Helvetica`
+    ctx.font = `${Math.floor(step*1.8)}px Comic Sans MS, Comic Sans, cursive`
+    // ctx.font = `${Math.floor(step*1.8)}px Arial, Helvetica`
     // ctx.font = Math.floor(step*1.8)+"px"
     ctx.beginPath()
 
