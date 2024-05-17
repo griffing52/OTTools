@@ -5,6 +5,11 @@ let prevContent;
 const descenders = "gjpqy"
 const ascenders = "bdfhiklt!@#$%&(){}[]?/;:|\\"
 
+/**
+ * The function `drawPDF` takes a canvas context and returns the step size for drawing rows on the
+ * canvas based on the number of rows per page and the number of dots per pixel.
+ * @returns The function `drawPDF` returns the value of the variable `step`.
+ */
 const drawPDF = ctx => rowsPerPage => dotsPerPixel => {
     let numOfSpaces = rowsPerPage*3-1
     let step = ctx.canvas.height/numOfSpaces
@@ -40,6 +45,10 @@ const drawPDF = ctx => rowsPerPage => dotsPerPixel => {
     return step
 }
 
+/**
+ * The function `drawBox` takes a canvas context and returns a function that draws a box on the canvas
+ * given the coordinates and dimensions.
+ */
 const drawBox = ctx => x => y => w => h => {
     ctx.moveTo(x, y)
     ctx.lineTo(x+w, y)
@@ -51,6 +60,10 @@ const drawBox = ctx => x => y => w => h => {
     ctx.lineTo(x, y)
 }
 
+/**
+ * The function `drawBoundingBox` takes in a canvas context (`ctx`), a letter, a metric object, and x,
+ * y, and s values, and draws a bounding box around the letter on the canvas.
+ */
 const drawBoundingBox = ctx => letter => metric => x => y => s => {
     // ctx.setLineDash([6])
     ctx.lineWidth = 4;
@@ -71,6 +84,11 @@ const drawBoundingBox = ctx => letter => metric => x => y => s => {
     // drawBox(ctx)(x)(y)(s*metrics.width)(h)
 }
 
+/**
+ * The `drawText` function takes a canvas context (`ctx`), a text string (`text`), a step size
+ * (`step`), and a maximum x-boundary (`xBound`), and draws the text on the canvas with the specified
+ * font size and line breaks.
+ */
 const drawText = ctx => text => step => xBound => {
     let y = step*2
     let x = 0;
@@ -111,6 +129,10 @@ const drawText = ctx => text => step => xBound => {
     ctx.stroke()
 }
 
+/**
+ * The `loadContent` function takes user input, creates a canvas element, and draws the input text on
+ * the canvas.
+ */
 const loadContent = () => {
     let text = document.getElementById("input").value
     prevContent = document.body.innerHTML
