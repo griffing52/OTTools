@@ -5,6 +5,7 @@ let prevContent;
 const descenders = "gjpqy"
 const ascenders = "bdfhiklt!@#$%&(){}[]?/;:|\\"
 
+
 /**
  * The function `drawPDF` takes a canvas context and returns the step size for drawing rows on the
  * canvas based on the number of rows per page and the number of dots per pixel.
@@ -159,5 +160,10 @@ const loadContent = () => {
     // document.body.innerHTML = "<h1>Testing!!!</h1>"
 }
 
-window.onbeforeprint = loadContent
-window.onafterprint = () => document.body.innerHTML = prevContent
+    
+
+const startup = () => {
+    window.onbeforeprint = loadContent
+    window.onafterprint = () => document.body.innerHTML = prevContent
+}
+window.addEventListener("load", startup, false);

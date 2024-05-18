@@ -15,10 +15,15 @@
                 <span class="header-text">Press Ctrl+P or click "Print" to print →</span>
                 <button onclick="print()" class="header-btn">Print</button>
             </div>
-            
+            <div id="toolbar">
+                <button onclick="toggleGrid()" class="toolbar-btn">Toggle Grid</button>
+                <button onclick="toggleLines()" class="toolbar-btn">Toggle Lines</button>
+                <input type="color" id="color-selector" value="#000000">
+            </div>
         </header>
         <div id="main">    
             <textarea id="input" placeholder="Type text here"></textarea>
+            <canvas id="editor"></canvas>
         </div>
         <script type="text/javascript" src="main.js"></script>
     </body>
