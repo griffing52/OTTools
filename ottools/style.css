@@ -84,6 +84,7 @@ header > .header-text {
     font-size: 60px;
     font-size: 3vh;
     position: absolute;
+    /* position: absolute; */
     top: 50%;
     left: 1%;
     -ms-transform: translateY(-50%);
