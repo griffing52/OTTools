@@ -8,13 +8,17 @@ const ascenders = "bdfhiklt!@#$%&(){}[]?/;:|\\"
 const editor = document.getElementById("editor");
 const ctx = editor.getContext("2d");
 
+let step;
+
 const startup = () => {
     editor.width = editor.parentElement.offsetWidth
     editor.height = editor.parentElement.offsetHeight
 
-    clearCanvas(ctx);
+    fillCanvas('blue')(ctx)
 
-    let step = drawPDF(ctx)(9)(18/951)
+    // clearCanvas(ctx);
+
+    // let step = drawPDF(ctx)(9)(18/951)
     // drawText(ctx)("")(step)(editor.width)
 }
 
@@ -24,7 +28,7 @@ window.addEventListener("load", startup, false);
 document.querySelector("#input").addEventListener("input", () => {
     clearCanvas(ctx);
 
-    let step = drawPDF(ctx)(9)(18/951)
+    step = drawPDF(ctx)(9)(18/951)
     drawText(ctx)(document.querySelector("#input").value)(step)(editor.width)
 }, false);
 
@@ -45,7 +49,7 @@ const loadContent = () => {
   
 	clearCanvas(ctx);
 
-    let step = drawPDF(ctx)(9)(18/951)
+    step = drawPDF(ctx)(9)(18/951)
     drawText(ctx)(text)(step)(canvas.width)
 
 

@@ -101,6 +101,14 @@ header > .header-text {
     resize: none;
 }
 
+#editor {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .striped-border { 
     border: 1px dashed #000;
 }

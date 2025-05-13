@@ -126,9 +126,15 @@ const drawText = ctx => text => step => xBound => {
     ctx.stroke()
 }
 
-const clearCanvas = ctx => {
+/**
+ * debugging function
+ */
+const fillCanvas = color => ctx => {
     ctx.beginPath();
     ctx.rect(0, 0, ctx.canvas.width, ctx.canvas.height);
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = color;
     ctx.fill();
+
 }
+
+const clearCanvas = fillCanvas('white');
